@@ -1,0 +1,44 @@
+/*-----------fonts-----------*/
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&display=swap');
+/*-----------fonts-----------*/
+@import "ibg.scss";
+@import "null.scss";
+@import "ui.scss";
+@import "how.scss";
+@import "header.scss";
+@import "footer.scss";
+@import "functional-food.scss";
+@import "catalog-cards.scss";
+@import "additional-goods.scss";
+@import "map.scss";
+.wrapper {
+    width:100%;
+    min-height:100%;
+    overflow: hidden;  
+    display: flex;
+    flex-direction: column;
+}
+.page{
+    flex: 1 1 auto;
+}
+.body-lock{
+    overflow:hidden;
+}
+._container {
+    max-width:1250px;
+    padding:0 15px;
+    height:100%;
+    margin:0 auto;
+    @media(max-width:768px){
+        max-width:738px ;
+    }
+    @media(max-width:320px){
+        max-width:310px;
+    }
+}
+@import "catalog.scss";
+@import "example.scss";
+@import "program-selection.scss";
+@import "contact.scss";
+@import "comment.scss";
+@import "additionally.scss";

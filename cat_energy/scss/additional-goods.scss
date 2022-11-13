@@ -1,0 +1,276 @@
+/*---------additional-goods---------*/
+
+.additional-goods {
+   padding-bottom: 86px;
+   @media(max-width:860px){
+      padding-bottom: 76px;
+   }
+   @media(max-width:555px){
+      padding-bottom: 37px;
+   }
+   width: 100%;
+   &__container {
+      *:last-child{
+         margin-bottom:0px;
+      }
+   }
+   &__title {
+     margin-bottom:81px;
+     span{
+      padding: 0px 35px 0px 40px;
+      right: 40px;
+      @media(max-width:847px){
+         padding: 0px 36px 0px 37px;
+         right: 37px;  
+      }
+     }
+     @media(max-width:555px){
+      font-size: 30px;
+      line-height: 100%;
+      margin-bottom:35px;
+      span{
+         padding: 0px 19px 0px 22px; 
+         right: 22px;  
+      }
+     }
+     @media(max-width:362px){
+      font-size: 24px;
+     }
+   }
+    &__body{
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      @media(max-width:1017px){
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+    &__items{
+      flex:1 1 auto;
+      width: 100%;
+      @media(max-width:1017px){
+        margin-bottom:69px; 
+      }
+      @media(max-width:555px){
+         margin-bottom:39px;   
+      }
+    }
+   .additional-good {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 14px 0px 16px 0px;
+     border-bottom: 1px solid #CDCDCD;
+     &:first-child{
+      border-top: 1px solid #CDCDCD;
+     }
+     @media(max-width:847px){
+       flex-direction: column;
+       padding: 26px 38px 28px 38px;
+       border: 1px solid #CDCDCD;
+       border-top: none;
+     }
+     @media(max-width:555px){
+       border: none;
+       border-bottom: 1px solid #CDCDCD;
+       padding: 13px 0px 19px 0px;
+     }
+     &__info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin-right:39px;
+        @media(max-width:1072px){
+         margin-right:25px;
+        } 
+        @media(max-width:847px){
+          margin-right:0px;
+          margin-bottom:26px;
+        }
+        @media(max-width:555px){
+          flex-direction: column;
+          align-items: flex-start;
+          width: 100%;
+          margin-bottom:15px;
+        }
+     }
+     &__title {
+        font-family: 'Oswald';
+        font-weight: 400;
+        font-size: 20px;
+        line-height:100%;
+        text-transform: uppercase;
+        color: #222222;     
+        margin-right:20px;
+         @media(max-width:555px){
+            margin:0px 0px 11px 0px;
+         } 
+         @media(max-width:357px){
+            font-size: 16px;
+         }
+     }
+     &__text {
+        font-family: 'Arial';
+        font-weight: 400;
+        font-size: 16px;
+        line-height:125%;
+        color: #444444;
+        width: 100%;
+        transform: translate(0px, 3px);
+        align-items: center;
+        display: inline-flex;
+        justify-content: space-between;
+        max-width: 287px;
+        line-height: 125%;
+        @media(max-width:1132px){
+         max-width: 220px;
+        }
+        span{
+          margin-left:20px;
+          @media(max-width:555px){
+           &::after{
+             content: '.';
+           }
+          }
+          
+        }
+        @media(max-width:357px){
+         font-size: 14px;
+         line-height: 100%;
+        }
+     }
+     &__button {
+      font-size: 16px;
+      line-height:125%;
+      padding: 10px 91px;
+      max-width:244px;
+      @media(max-width:847px){
+         max-width:none; 
+         width:100%; 
+         padding: 9px 91px;
+      }
+      @media(max-width:555px){
+         padding: 10px 91px; 
+      }
+     }
+     &:nth-child(1){
+      .additional-good__text {
+         span{
+           margin-right:1px;
+           @media(max-width:847px){
+              margin-right:0px;   
+           } 
+         }
+         @media(max-width:847px){
+            max-width: 226px;
+         } 
+      }
+     }
+     &:nth-child(2){
+      .additional-good__text {
+         span{
+           margin-right:9px;
+           @media(max-width:847px){
+              margin-right:0px;   
+           } 
+         }
+         @media(max-width:847px){
+            max-width: 164px;
+         } 
+      }
+     }
+     &:nth-child(3){
+      .additional-good__text {
+         @media(max-width:847px){
+            max-width: 145px;
+         } 
+      }
+     }
+     &:nth-child(4){
+      .additional-good__text {
+         @media(max-width:847px){
+            max-width: 220px;
+         } 
+      }
+     }
+     &:nth-child(1) .additional-good__text, &:nth-child(2) .additional-good__text, &:nth-child(3) .additional-good__text, &:nth-child(4) .additional-good__text  {
+      @media(max-width:555px){
+         max-width: none;
+         width: 100%;
+      } 
+     }
+   }
+
+    .additional-present {
+     max-width:245px;
+     width: 100%;
+     padding:56.5px 43px 43px 41px;
+     margin-left:81px;
+     background-image: url('../img/gift-photo-desktop.png');
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center;
+     @media(max-width:1072px){
+      margin-left:41px;
+     }
+     @media(max-width:1017px){
+      margin-left:0px;
+      max-width:none;
+      padding:57px  124px 60px 78px;
+      background-image: url('../img/gift-photo-tablet.png');
+     }
+     @media(max-width:555px){
+      padding:58px 61px 43px 58px;
+      background-image: url('../img/gift-photo-mobile.png');
+     }
+     &__body {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       text-align: center;
+       height: 100%;
+       justify-content: space-between;
+       @media(max-width:1017px){
+         flex-direction: row;
+         align-items: center;
+         text-align: center;
+         width: 100%;
+         justify-content: space-between;
+      }
+      @media(max-width:555px){
+         flex-direction: column;
+      }
+     }
+     &__icon {
+      width: 80px;
+      height: 82.57px;
+      margin-bottom:47px;
+      @media(max-width:1017px){
+         margin-bottom:0px;
+      }
+      @media(max-width:555px){
+         width: 78px;
+         height: 80px;
+         margin-bottom:48px;
+      }
+     }
+     &__text {
+      font-family: 'Arial';
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 125%;
+      color: #FFFFFF;
+      @media(max-width:1017px){
+         max-width: 161px;
+         text-align: left;
+      }
+      @media(max-width:555px){
+         text-align: center;
+      }
+     }
+    }
+}
+
+/*---------additional-goods---------*/
