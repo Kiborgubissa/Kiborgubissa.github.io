@@ -1,0 +1,31 @@
+/*----------------ui----------------*/
+.logo {
+    display: flex;
+    align-items: center;
+    transition-duration: 0.3s;
+    &:hover{
+      transition-duration: 0.3s;
+      opacity:0.9;
+    }
+    //logo__img
+    &__img{
+       width: 40px;
+       flex:0 0 40px;
+       height: 40px;
+       margin-right:6px;
+       @media(max-width:555px){
+         width: 35px;
+         flex:0 0 35px;
+         height: 35px;
+       }
+    }
+    //logo__text
+    &__text {
+       @extend %text1;
+       margin-top:6px;
+       @media(max-width:555px){
+        font-size:16px;
+       }
+    } 
+}
+/*----------------ui----------------*/
