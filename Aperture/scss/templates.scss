@@ -1,0 +1,116 @@
+%ground-base{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+%title{
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 105%;
+    color: #FFFFFF;
+    text-align: center;
+    @media(max-width:747px){
+        font-size: 39px;
+    }
+    @media(max-width:555px){
+        font-size: 38px;
+    }
+}
+%text2{
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 130%;
+    color: #C0C0C0;
+    text-align: center;
+    @media(max-width:747px){
+        font-size: 22px;
+    }
+    
+}
+%standtext{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 143%;
+    color: #C0C0C0;
+    @media(max-width:747px){
+      font-size: 13px;
+    }
+    @media(max-width:555px){
+        font-size:12px;
+    }
+}
+%text1{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 143%;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #C0C0C0;
+    @media(max-width:747px){
+      font-size: 13px;
+    }
+    @media(max-width:555px){
+        font-size:12px;
+    }
+}
+%text3{
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 125%;
+  color: #C0C0C0;
+  @media(max-width:747px){
+    font-size: 22px;
+  }
+  @media(max-width:555px){
+    font-size:20px;
+  }
+}
+%text4{
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 154%;
+  color: #C0C0C0;
+  @media(max-width:747px){
+    font-size: 12px;
+  }
+}
+%button{
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 133%;
+    letter-spacing: 0.4px;
+    color: #000000;
+    display:inline-flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background: #FFFFFF;
+    border-radius: 14px;
+    padding:5px 10px 5px 4px;
+    @media(max-width:747px){
+      font-size: 14px;
+    }
+    @media(max-width:555px){
+      font-size: 13px;
+    }
+    
+    &::before{
+      @include psed('',block);
+      background-image:url('../img/icons/big-point.png');
+      @extend %ground-base;
+      margin-right:6px;
+      width:32px;
+      height:32px;
+      flex:0 0 32px;
+      @media(max-width:747px){
+        width:30px;
+        height:30px;
+        flex:0 0 30px;
+      }
+      @media(max-width:555px){
+        width:28px;
+        height:28px;
+        flex:0 0 28px;
+      }
+    }
+}
