@@ -1,0 +1,104 @@
+/*-----------ui-----------*/
+.title{
+    font-family: 'Oswald';
+    font-weight: 400;
+    font-size: 60px;
+    line-height:100%;
+    color: #000000;
+}
+.text{
+    font-family: 'Arial';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #444444;
+}
+.line-title{
+    font-family: 'Oswald';
+    font-weight: 400;
+    font-size: 36px;
+    color: #000000;
+    line-height: 100%;
+    display: inline-flex;
+    align-items: center;
+    @media(max-width:555px){
+      font-size: 30px;
+      line-height: 108%;
+    }
+    @media(max-width:320px){
+      font-size: 24px;
+    }
+    span{
+      position: relative;
+      z-index: 100;
+      line-height: 100%;
+      background: #FFFFFF;
+      padding:0 40px;
+      right: 40px;
+      @media(max-width:768px){
+        right:39px;
+      }
+      @media(max-width:555px){
+        right:20px;
+      }
+    }
+    &::after{
+      content:'';
+      width: 100%;
+      height: 2px;
+      position: absolute;
+      background-color:#68B738;
+      left: 0;
+      z-index: 0;
+      transform: translate(0px, 7px);
+    }
+}
+.green-button{
+  background: #68B738;
+  font-family: 'Oswald';
+  display: inline-flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  transition-duration:0.3s;
+  &:hover{
+    background: #5EAA2F;
+    transition-duration:0.3s;
+  }
+  &:active{
+    color:rgba(255,255,255,0.3);
+    transition-duration:0.3s;
+  }
+}
+.form-text{
+  font-family: 'Oswald';
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30 / 20 * 100%;
+  text-transform: uppercase;
+  color: #444444;
+  @media(max-width:555px){
+    font-size: 16px;
+    line-height: 112%;
+  }
+}
+.input{
+  border: 1px solid #E7E7E7;
+  transition-duration: 0.3s;
+  outline: none;
+  &._error{
+    border:1px solid #FF8282;
+  }
+  &:not(._error){
+    &:hover{
+      border: 1px solid #CDCDCD;
+      transition-duration: 0.3s;  
+    }
+    &:focus{
+      border: 1px solid #444444;
+    }
+  }
+}
+/*-----------ui-----------*/
