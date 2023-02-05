@@ -1,0 +1,64 @@
+%ground-base{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+%header-text{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20 / 14 * 100%;
+    color: #1D2F38;
+    @media(max-width:768px){
+      font-size:29px;
+    }
+}
+%green-button{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 133%;
+  color: #FFFFFF;
+  background: #17A550;
+  transition-duration: 0.3s;
+  border-radius: 5px;
+  padding: 15px 5px;
+  width: 100%;
+  &:hover{
+    background: #149949;
+    transition-duration: 0.3s;
+  }
+}
+%text1{
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 133%;
+  color: #1D2F38;
+}
+%text2{
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 167%;
+  color: #536D7A; 
+}
+%text3{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 125%;
+  color: #1D2F38;
+}
+%text4{
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 182%;
+  color: #1D2F38;
+}
+%title{
+  font-family: 'Bitter';
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 117%;
+  color: #1D2F38;
+}

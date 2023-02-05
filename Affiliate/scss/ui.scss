@@ -1,0 +1,30 @@
+.title {
+   font-family: 'Bitter';
+   font-weight: 400;
+   font-size: 38px;
+   line-height: 105%;
+   color: #1D2F38;
+   @media(max-width:540px){
+      font-size:28px;
+   }
+   @media(max-width:340px){
+      font-size:26px;
+   }
+}
+.view-all{
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 125%;
+   color: #1D2F38;
+   display: inline-flex;
+   align-items: center;
+   @media(max-width:420px){
+      font-size: 14px;
+   }
+   &::before{
+      @include psed(url('../img/icons/triangle.svg'),block);
+      width:20px;
+      height:20px;
+      margin-right:4px;
+   }
+}
