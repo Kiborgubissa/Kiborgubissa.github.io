@@ -1,0 +1,98 @@
+/*----------------areas----------------*/
+.areas {
+   padding:113px 0px 100px 0px;
+   background: #000000;
+   @media(max-width:1072px){
+      padding:103px 0px 90px 0px;
+   }
+   //areas__container
+   &__container {
+      
+   }
+   //areas__title
+   &__title {
+      @extend %title;
+      margin-bottom:15px;
+      @media(max-width:555px){
+         margin-bottom:10px;
+      }
+   }
+   //areas__text
+   &__text {
+      @extend %text2;
+      margin-bottom:42px;
+      @media(max-width:555px){
+         margin-bottom:35px;
+      }
+   }
+   //areas__items
+   &__items {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-auto-rows:minmax(600px,auto);
+      grid-gap:16px;
+      @media(max-width:1072px){
+         grid-auto-rows:minmax(520px,auto);
+      }
+      @media(max-width:992px){
+         grid-auto-rows:minmax(460px,auto);
+      }
+      @media(max-width:787px){
+         grid-template-columns: 1fr;
+         grid-gap:20px;
+      }
+      @media(max-width:555px){
+         grid-auto-rows:minmax(390px,auto);
+      }
+      .area {
+        width:100%;
+        padding:30px 45px 30px 30px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        @media(max-width:992px){
+          padding:25px 40px 25px 25px;
+        }
+        @media(max-width:555px){
+          padding:15px;
+        }
+        //area__title
+        &__bg{
+          position: absolute;
+          top:0;
+          left:0;
+          width: 100%;
+          height: 100%;
+          z-index:1;
+        }
+        //area__body
+        &__body{
+          position: relative;
+          z-index:2;
+        }
+        //area__title
+        &__title {
+           @extend %text1;
+           color: #FFFFFF;
+           margin-bottom:10px;
+        }
+        //area__text
+        &__text { 
+           @extend %standtext;
+           margin-bottom:18px;
+        }
+        //area__button
+        &__button {
+            @extend %button;
+        }
+      }
+   }
+   &__container *:last-child{
+      margin-bottom:0px;
+   } 
+}
+
+
+
+/*----------------areas----------------*/
