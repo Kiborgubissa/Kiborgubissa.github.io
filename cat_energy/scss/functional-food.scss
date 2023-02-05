@@ -1,0 +1,181 @@
+/*--------------functional-food--------------*/
+.functional-food {
+   padding-bottom: 54px;
+   position: relative;
+   @media (max-width: 888px){
+     padding:8px 0px 0px 0px;
+   }
+   @media(max-width:555px){
+    padding:0px 0px 0px 0px;
+   }
+   .functional-food__container {
+     &::after{
+        content: '';
+        background-image: url('../img/index-background-desktop.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        display: block;
+        position: absolute;
+        width:50%;
+        min-height: 100%;
+        padding-bottom:141px;
+        margin-top:-141px;
+        top:0;
+        right: 0;
+        @media(max-width:1072px){
+            display: none;
+        }
+     }
+     @media(max-width:555px){
+      max-width: none;
+      padding: 0px;
+     }
+   } 
+
+   .functional-food__body {
+     display: flex;
+     @media (max-width: 888px){
+       flex-direction: column;
+     }
+     @media(max-width:555px){
+       text-align: center;
+       display: block;
+     }
+     .functional-food__content {
+       padding:82px 0px 0px 80px;
+       flex: 0 0 499px;
+       position: relative;
+       z-index:101;
+       @media(max-width:1032px){
+        padding:40px 0px 0px 80px;
+       }
+       @media (max-width: 912px){
+         padding:40px 0px 0px 40px;
+       }   
+       @media (max-width: 888px){
+        flex:1 1 auto;
+        padding:0px 0px 0px 80px;
+       }
+       @media (max-width: 747px){
+         padding-left: 30px;
+       }
+       @media (max-width: 555px){
+        padding: 0px;
+       } 
+       .functional-food__text-content{
+        margin-bottom:52px;
+        @media(max-width:555px){
+          background-image: url('../img/index-background-mobile\ 1.png');
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          width: 100%;
+          display: flex;
+          flex-direction:column ;
+          align-items: center;
+          text-align: center;
+          margin-bottom:135px;
+          &::after{
+            content: '';
+            display: block;
+            background-image: url('../img/index-can-mobile.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            width:280px;
+            height:270px;
+            flex: 0 0 270px;
+            position: relative;
+            margin:29px 0px -132px 0px;
+          }
+        }
+       
+       } 
+       .functional-food__title {
+         max-width:420px;
+         margin-bottom:40px;
+         @media(max-width:555px){
+           font-size: 45px;
+           line-height:100%;
+           text-align: center;
+           color: #FFFFFF;
+           padding:27px 20px 0px 20px;
+           margin-bottom:25px;
+         }
+         @media (max-width: 357px){
+          font-size: 36px;
+         }
+       } 
+       .functional-food__text {
+         font-family: 'Oswald';
+         font-weight: 400;
+         font-size: 20px;
+         line-height:100%;
+         text-transform: uppercase;
+         color: #000000;
+         max-width:290px;
+         @media (max-width: 555px){
+          font-size: 16px;
+          color: #FFFFFF;
+         } 
+         @media (max-width: 357px){
+          font-size: 14px;
+         }
+       }
+       .functional-food__button {
+         padding: 12px 10px;
+         width: 100%;
+         max-width:244px;
+         font-size: 20px;
+         @media(max-width:555px){
+          max-width: 280px;
+          font-size: 14px;
+          padding: 9.5px 10px;
+         }
+       }
+       *:last-child{
+        margin-bottom:0px;
+       }
+    }
+    &::after{
+      content: '';
+      display: block;
+      position: relative;
+      left: -46px;
+      z-index: 100;
+      flex:0 0 552px;
+      height: 499px;
+      background: url('../img/index-can.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      @media(max-width:1032px){
+        flex:0 0 460px;
+        height: 420px;
+        left: -40px; 
+      }
+      @media (max-width: 948px){
+        left: -80px;
+      }  
+      @media (max-width: 888px){
+        background: url('../img/index-can-tablet.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: -83px auto 0px auto;
+        flex:0 0 609px;
+        width: 709px;
+        left: 0px;
+      }
+      @media (max-width: 747px){
+        width: 509px;
+        flex:0 0 459px; 
+      } 
+      @media (max-width: 555px){
+        display: none;
+      } 
+    } 
+   }
+}
+/*--------------functional-food--------------*/
