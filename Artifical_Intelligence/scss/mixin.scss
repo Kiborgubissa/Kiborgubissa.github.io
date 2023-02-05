@@ -1,0 +1,18 @@
+@mixin setfont($size,$color,$lh){
+    font-size:$size;
+    color: $color;
+    line-height:$lh;
+}
+@mixin setbg($img,$width,$height){
+    background-image:$img;
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center;
+    width:$width;
+    height:$height;
+}
+@mixin psed($con,$dis){
+    content:$con;
+    display:$dis;
+}
+
