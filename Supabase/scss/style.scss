@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Source+Code+Pro&display=swap');
+
+//font
+@import "ibg.scss";
+@import "null.scss";
+@import "templates.scss";
+@import "ui.scss";
+
+body{
+   font-family: 'Roboto';
+   font-weight: 400;
+   color: #E0E0E0;
+   background-color: #181818;
+} 
+.body-lock{
+   overflow: hidden;
+}
+.wrapper{
+   width: 100%;
+   min-height:100%;
+   display: flex;
+   flex-direction: column;
+   overflow: hidden;
+}
+.page{
+   height:100%;
+   flex:1 1 auto;
+}
+._container{
+   max-width:1195px;
+   padding:0 15px;
+   width: 100%;
+   margin:0 auto;
+}
+
+@import "header.scss";
+@import "store.scss";
+@import "advantages.scss";
+@import "dashboard.scss";
+@import "APIs.scss";
+@import "supabase-auth.scss";
+@import "build.scss";
+@import "footer.scss";
