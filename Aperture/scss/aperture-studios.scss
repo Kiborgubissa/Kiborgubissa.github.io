@@ -1,0 +1,56 @@
+/*-----------------aperture-studios----------------*/
+.aperture-studios {
+   width:100%;
+   min-height:88.75vh;
+   height: 100%;
+   background-image: url('../img/big/main.png');
+   @extend %ground-base;
+   padding:40px 0px 70px 0px;
+   display: flex;
+   flex-direction: column;
+   justify-content: end;
+   @media(max-width:1132px){
+      padding:35px 0px 60px 0px;
+   }
+   //aperture-studios__body
+   &__body {
+     max-width:600px;
+     margin:0 auto;
+     text-align: center;
+     margin-bottom:13px;
+     @media(max-width:1132px){
+      margin-bottom:20px;
+     }
+   }
+   //aperture-studios__description
+   &__description {
+      @extend %text1;
+      margin-bottom:1px;
+   }
+   //aperture-studios__title
+   &__title {
+      font-weight: 400;
+      font-size: 54px;
+      line-height: 110%;
+      color: #FFFFFF;
+      margin-bottom:18px;
+      @media(max-width:747px){
+         font-size: 53px;
+      }
+      @media(max-width:555px){
+         font-size:52px;
+         margin-bottom:14px;
+     }
+   }
+   //aperture-studios__text
+   &__text {
+      @extend %standtext;
+   }
+   &__body *:last-child{
+      margin-bottom:0px;
+   }
+   &__container *:last-child{
+      margin-bottom:0px;
+   }
+}
+/*----------------aperture-studios----------------*/

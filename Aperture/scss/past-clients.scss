@@ -1,0 +1,101 @@
+/*----------------past-clients----------------*/
+.past-clients {
+    width:100%;
+    padding:120px 0px 140px 0px;
+    @media(max-width:902px){
+      padding:100px 0px 80px 0px;
+    }
+   //past-clients__container
+   &__container {
+     text-align: center;
+   }
+   //past-clients__title
+   &__title {
+     @extend %title;
+     margin-bottom:15px;
+     @media(max-width:747px){
+      margin-bottom:10px;
+     }
+   }
+   //past-clients__text
+   &__text {
+     @extend %text3;
+     margin-bottom:82px;
+     @media(max-width:555px){
+      margin-bottom:60px;
+     }
+   }
+   .logotypes {
+     width: 100%;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding:0 46px;
+     flex-wrap: wrap;
+     @media(max-width:902px){
+      padding:0px;
+     }
+     //logotypes__item 
+     &__item {
+       width:128px;
+       flex:0 0 128px;
+       @media(max-width:902px){
+        padding:0px;
+        margin-bottom:40px;
+       }
+       @media(max-width:747px){
+        width:100px;
+        flex:0 0 100px;
+       }
+       @media(hover:hover){
+        transition-duration: 0.2s;
+        &:hover,&:active{
+            transition-duration: 0.2s;
+        }
+        &:hover{
+            opacity: 0.9;
+        }
+        &:active{
+            opacity: 0.8;
+        }
+       }
+       &:nth-child(1){
+        height:30px;
+        @media(max-width:747px){
+          height:26px;
+        }
+       }
+       &:nth-child(2){
+        @media(max-width:747px){
+          height:60px;
+        }
+       }
+       &:nth-child(3){
+        @media(max-width:747px){
+          height:15px;
+        }
+       }
+       &:nth-child(4){
+        @media(max-width:747px){
+          height:22px;
+        }
+       }
+       &:nth-child(5){
+        @media(max-width:747px){
+          height:20px;
+        }
+       }
+       &:not(:last-child){
+        margin-right:15px;
+       }
+       img{
+        width: 100%;
+        height: 100%;
+       }
+     } 
+   }
+   &__container *:not(.logotypes__item):last-child{
+    margin-bottom:0px;
+   }
+}
+/*----------------past-clients----------------*/
